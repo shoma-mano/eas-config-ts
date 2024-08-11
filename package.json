@@ -1,7 +1,8 @@
 {
-  "name": "eas-ts",
+  "name": "eas-config-ts",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "exports": {
     ".": {
       "import": {
@@ -14,21 +15,26 @@
       }
     }
   },
-  "files":["dist"],
-  "bin":{
-    "eas-ts": "./dist/main.mjs"
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "gen-eas-config": "./dist/main.mjs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild && chmod -R 755 dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "citty": "^0.1.6",
-    "unbuild": "^2.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.5.4"
+    "@types/node": "^22.2.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "citty": "^0.1.6",
+    "jiti": "^1.21.6",
+    "unbuild": "^2.0.0"
   }
 }

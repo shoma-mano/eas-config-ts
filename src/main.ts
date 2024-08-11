@@ -1,26 +1,26 @@
 #!/usr/bin/env node
-
 import { defineCommand, runMain } from "citty";
+import { writeFileSync } from "fs";
+import createJITI from "jiti";
+import { join, resolve } from "path";
 
 const main = defineCommand({
-  meta: {
-    name: "hello",
-    version: "1.0.0",
-    description: "My Awesome CLI App",
-  },
-  args: {
-    name: {
-      type: "positional",
-      description: "Your name",
-      required: true,
-    },
-    friendly: {
-      type: "boolean",
-      description: "Use friendly greeting",
-    },
-  },
-  run({ args }) {
-    console.log(`${args.friendly ? "Hi" : "Greetings"} ${args.name}!`);
+  async run() {
+    const projectDir = process.cwd();
+
+    // プロジェクトディレクトリからeas.config.tsをインポート
+    const rootDir = resolve(projectDir, "eas.config.ts");
+    // Create jiti instance for loading initial config
+    const jiti = createJITI(rootDir, { interopDefault: true });
+    const config = jiti(join(projectDir, "eas.config.ts"));
+
+    writeFileSync(
+      join(projectDir, "eas.json"),
+      JSON.stringify(config, null, 2),
+    );
+
+    // show complete message
+    console.log("eas.json created successfully");
   },
 });
 

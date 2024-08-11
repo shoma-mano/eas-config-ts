@@ -7,17 +7,25 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
+      '@types/node':
+        specifier: ^22.2.0
+        version: 22.2.0
       citty:
         specifier: ^0.1.6
         version: 0.1.6
-      unbuild:
-        specifier: ^2.0.0
-        version: 2.0.0(typescript@5.5.4)
-    devDependencies:
+      jiti:
+        specifier: ^1.21.6
+        version: 1.21.6
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
+      unbuild:
+        specifier: ^2.0.0
+        version: 2.0.0(typescript@5.5.4)
 
 packages:
 
@@ -472,6 +480,9 @@ packages:
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  '@types/node@22.2.0':
+    resolution: {integrity: sha512-bm6EG6/pCpkxDf/0gDNDdtDILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -1053,6 +1064,11 @@ packages:
     resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
     engines: {node: ^10 || ^12 || >=14}
 
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   pretty-bytes@6.1.1:
     resolution: {integrity: sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
@@ -1146,6 +1162,9 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  undici-types@6.13.0:
+    resolution: {integrity: sha512-xtFJHudx8S2DSoujjMd1WeWvn7KKWFRESZTMeL1RptAYERu29D6jphMjjY+vn96jvN3kVPDNxU/E13VTaXj6jg==}
 
   untyped@1.4.2:
     resolution: {integrity: sha512-nC5q0DnPEPVURPhfPQLahhSTnemVtPzdx7ofiRxXpOB2SYnb3MfdU3DVGyJdS8Lx+tBWeAePO8BfU/3EgksM7Q==}
@@ -1509,6 +1528,10 @@ snapshots:
   '@trysound/sax@0.2.0': {}
 
   '@types/estree@1.0.5': {}
+
+  '@types/node@22.2.0':
+    dependencies:
+      undici-types: 6.13.0
 
   '@types/resolve@1.20.2': {}
 
@@ -2106,6 +2129,8 @@ snapshots:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
+  prettier@3.3.3: {}
+
   pretty-bytes@6.1.1: {}
 
   queue-microtask@1.2.3: {}
@@ -2208,6 +2233,8 @@ snapshots:
       - sass
       - supports-color
       - vue-tsc
+
+  undici-types@6.13.0: {}
 
   untyped@1.4.2:
     dependencies:
