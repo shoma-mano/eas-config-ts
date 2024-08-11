@@ -25,3 +25,5 @@ export default defineEasConfig({
 ```bash
 npx gen-eas-config
 ```
+
+test
