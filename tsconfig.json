@@ -17,5 +17,5 @@
     "noImplicitOverride": true,
     "noEmit": true
   },
-  "include": ["src"]
+  "include": ["src", "eas.config.ts"]
 }
