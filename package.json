@@ -1,6 +1,6 @@
 {
   "name": "eas-config-ts",
-  "version": "1.0.1",
+  "version": "1.0.2-0",
   "description": "",
   "type": "module",
   "exports": {
@@ -23,17 +23,19 @@
     "gen-eas-config": "./dist/main.mjs"
   },
   "scripts": {
-    "build": "unbuild && chmod -R 755 dist"
+    "build": "unbuild && chmod -R 755 dist",
+    "release": "changelogen --release --prerelease --publish --publishTag rc && git push --follow-tags"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jiti": "^1.21.6",
-    "citty": "^0.1.6"
+    "citty": "^0.1.6",
+    "jiti": "^1.21.6"
   },
   "devDependencies": {
     "@types/node": "^22.2.0",
+    "changelogen": "^0.5.5",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "unbuild": "^2.0.0"
