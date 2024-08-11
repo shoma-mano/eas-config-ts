@@ -13,6 +13,8 @@ pnpm add -D eas-config-ts
 1. Create an `eas.config.ts` file in your project root with your EAS configuration.
 
 ```typescript
+import { defineEasConfig } from "eas-config-ts";
+
 export default defineEasConfig({
   build: {
     // your config
