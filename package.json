@@ -28,13 +28,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "jiti": "^1.21.6",
+    "citty": "^0.1.6"
+  },
   "devDependencies": {
     "@types/node": "^22.2.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
-    "citty": "^0.1.6",
-    "jiti": "^1.21.6",
     "unbuild": "^2.0.0"
   }
 }
