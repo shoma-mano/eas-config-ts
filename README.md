@@ -1,6 +1,7 @@
 # eas-config-ts
 
 A TypeScript-based configuration generator for EAS (Expo Application Services).
+![alt text](image.png)
 
 ## Installation
 
@@ -18,6 +19,7 @@ import { defineEasConfig } from "eas-config-ts";
 import "dotenv/config";
 
 export default defineEasConfig({
+  // your config
   build: {
     development: {
       env: process.env,
