@@ -10,6 +10,13 @@ const main = defineCommand({
     const jiti = createJITI(projectDir, { interopDefault: true });
     const config = jiti(join(projectDir, "eas.config.ts"));
 
+    // remove empty fields
+    Object.keys(config).forEach((key) => {
+      if (!config[key]) {
+        delete config[key];
+      }
+    });
+
     writeFileSync(
       join(projectDir, "eas.json"),
       JSON.stringify(config, null, 2),
