@@ -1,6 +1,7 @@
 # eas-config-ts
 
 A TypeScript-based configuration generator for EAS (Expo Application Services).
+
 ![alt text](image.png)
 
 ## Installation
