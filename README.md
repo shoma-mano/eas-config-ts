@@ -19,10 +19,11 @@ import { defineEasConfig } from "eas-config-ts";
 // necessary if you want to use dotenv
 import "dotenv/config";
 
+// you can write type-safe config
 export default defineEasConfig({
-  // your config
   build: {
     development: {
+      // process.env can be used!!
       env: process.env,
     },
   },
