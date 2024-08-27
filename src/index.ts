@@ -1,5 +1,5 @@
 //  cli
-type CliConfig = {
+export type CliConfig = {
   /**
    * The compatible versions of EAS CLI with this config
    */
@@ -27,7 +27,7 @@ type CliConfig = {
 };
 
 //  build
-type CommonBuildConfig = {
+export type CommonBuildConfig = {
   /**
    * @typedef {Object} BuildProfileConfig
    */
@@ -183,7 +183,7 @@ type CommonBuildConfig = {
   config?: string;
 };
 
-type AndroidBuildConfig = {
+export type AndroidBuildConfig = {
   /**
    * When set to true, EAS CLI won't require you to configure credentials when building the app.
    * Defaults to false.
@@ -235,7 +235,7 @@ type AndroidBuildConfig = {
   config?: string;
 } & CommonBuildConfig;
 
-type IOSBuildConfig = {
+export type IOSBuildConfig = {
   /**
    * @typedef {Object} IOSBuildConfig
    */
@@ -343,13 +343,13 @@ type IOSBuildConfig = {
   config?: string;
 } & CommonBuildConfig;
 
-type BuildConfig = {
+export type BuildConfig = {
   android?: AndroidBuildConfig;
   ios?: IOSBuildConfig;
 } & CommonBuildConfig;
 
 //  submit
-type AndroidSubmitConfig = {
+export type AndroidSubmitConfig = {
   /**
    * @typedef {Object} GooglePlayConfig
    */
@@ -393,7 +393,7 @@ type AndroidSubmitConfig = {
   applicationId?: string;
 };
 
-type IOSSubmitConfig = {
+export type IOSSubmitConfig = {
   /**
    * @typedef {Object} AppStoreConfig
    */
@@ -472,12 +472,12 @@ type IOSSubmitConfig = {
   metadataPath?: string;
 };
 
-type SubmitConfig = {
+export type SubmitConfig = {
   android?: AndroidSubmitConfig;
   ios?: IOSSubmitConfig;
 };
 
-type EasConfig = {
+export type EasConfig = {
   cli?: CliConfig;
   build?: Record<string, BuildConfig>;
   submit?: Record<string, SubmitConfig>;
