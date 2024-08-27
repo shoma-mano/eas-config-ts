@@ -1,6 +1,6 @@
 {
   "name": "eas-config-ts",
-  "version": "1.0.6-0",
+  "version": "1.0.6",
   "description": "",
   "type": "module",
   "exports": {
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "unbuild && chmod -R 755 dist",
-    "release": "changelogen --release --prerelease --publish --publishTag rc && git push --follow-tags"
+    "release": "changelogen --release  --publish --publishTag rc && git push --follow-tags"
   },
   "keywords": [],
   "author": "",
