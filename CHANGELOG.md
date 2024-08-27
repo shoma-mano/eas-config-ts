@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.6-0
+
+[compare changes](https://github.com/shoma-mano/eas-config-ts/compare/v1.0.5...v1.0.6-0)
+
+### 🏡 Chore
+
+- Export types ([361bd01](https://github.com/shoma-mano/eas-config-ts/commit/361bd01))
+
+### ❤️ Contributors
+
+- Shoma-mano <ms2geki@gmail.com>
+
 ## v1.0.5
 
 [compare changes](https://github.com/shoma-mano/eas-config-ts/compare/v1.0.4...v1.0.5)
