@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.7
+
+[compare changes](https://github.com/shoma-mano/eas-config-ts/compare/v1.0.6...v1.0.7)
+
+### 🏡 Chore
+
+- Update-package.json ([729864d](https://github.com/shoma-mano/eas-config-ts/commit/729864d))
+
+### ❤️ Contributors
+
+- Shoma-mano <ms2geki@gmail.com>
+
 ## v1.0.6
 
 [compare changes](https://github.com/shoma-mano/eas-config-ts/compare/v1.0.6-0...v1.0.6)
