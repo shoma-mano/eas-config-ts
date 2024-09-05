@@ -24,10 +24,11 @@
   },
   "scripts": {
     "build": "unbuild && chmod -R 755 dist",
-    "release": "changelogen --release  --publish --publishTag rc && git push --follow-tags"
+    "release": "unbuild && changelogen --release  --publish --push"
   },
   "keywords": [],
-  "author": "",
+  "author": "ms2geki@gmail.com",
+  "url": "https://github.com/shoma-mano/eas-config-ts",
   "license": "ISC",
   "dependencies": {
     "citty": "^0.1.6",
